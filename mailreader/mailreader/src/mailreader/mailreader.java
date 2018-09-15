@@ -63,8 +63,8 @@ public class mailreader {
 
 		    }
 		    
-		    if (msg_body != null){
-			    body_array = msg_body.split("\\[tag\\]");
+		   /**if (msg_body != null){
+		   	    body_array = msg_body.split("\\[tag\\]");
 			    for (int i = 0; i < body_array.length; i++) {
 			    	sqlvalues = sqlvalues + "'" +body_array[i]+"',";
 			    }
@@ -73,14 +73,16 @@ public class mailreader {
 			    query = query.substring(0, query.length() - 6);
 				String sql_command = "INSERT INTO envios_table ("+query+");";
 				
-				System.out.println(sql_command);
+				System.out.println(sql_command); 
 			    
-		    }else{
+		    }else{ 
 		    	System.out.println("No New Messages");
+		    	
 		    }
 		    
+		    */
 
-		   
+		    System.out.println("No New Messages");
 
 	}
 }
