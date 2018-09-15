@@ -81,7 +81,7 @@ public class mailreader {
 				System.out.println(sql_command); 
 			    
 		    }else{ 
-		    	System.out.println("No New Messages");
+		    	System.out.println("No New Messages ");
 		    	
 		    }
 		    
