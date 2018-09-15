@@ -4,9 +4,9 @@ import javax.mail.*;
 import javax.mail.Flags.Flag;
 import javax.mail.search.FlagTerm;
 import java.util.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.SQLException;
 
 
 public class mailreader {
@@ -44,6 +44,8 @@ public class mailreader {
 
 		    for ( Message message : messages ) {
 		    	
+		    	
+		    	
 		    	String from = message.getFrom()[0].toString();
 		        String sentdate = message.getSentDate().toString();
 		        String subject = message.getSubject();
@@ -59,11 +61,14 @@ public class mailreader {
 			      
 			    	
 		        }
-
-
+		        	
+		        
 		    }
 		    
-		   /**if (msg_body != null){
+		  
+		    
+		    
+		   if (msg_body != null){
 		   	    body_array = msg_body.split("\\[tag\\]");
 			    for (int i = 0; i < body_array.length; i++) {
 			    	sqlvalues = sqlvalues + "'" +body_array[i]+"',";
@@ -80,9 +85,9 @@ public class mailreader {
 		    	
 		    }
 		    
-		    */
+		    
 
-		    System.out.println("No New Messages");
+		  
 
 	}
 }
